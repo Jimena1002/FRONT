@@ -12,10 +12,10 @@ p {
 }
 button {
     color: #fff;
-    background-color: #67b54b;
+    background-color: #416e30;
     padding: 12px 14px;
-    border: 0ch;
-    border-radius: 5px;
+    border-width: 0px;
+    border-radius: 10px;
 }
 .header {
     margin: 14px 12px;
@@ -37,24 +37,26 @@ li {
 .navbar {
     width: 70%;
     text-align: center;
-    color: #67b57b;
+    color: black;
     font-family: sans-serif;
-    font-family: 45px;
+    font-family: 80px;
 }
 .navbar > *{
-    padding: 50px;
+    padding: 0px;
+    margin-left: 15px;
+    margin-inline-start: 50px;
 
 }
 .actions {
-    width: 20%;
+    width: 15%;
     text-align: right;
-    font-size: 14px;
-    line-height: 10px;
+    font-size: 15px;
+    line-height: 15px;
     color: #67b54b;
 }
 
 .actions > * {
-    margin-left: 10px;
+    text-align: center;
+    margin-left: 20px;
     margin-right: 10px;
-
 }
