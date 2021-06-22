@@ -21,6 +21,7 @@ button {
     font-size: 0;
     height: 45px;
     font-family: sans-serif;
+    width: 100%;
 }
 li {
     display: inline;
@@ -32,6 +33,13 @@ li {
     vertical-align: middle;
     height: 100%;
     line-height: 45px;
+}
+.fixed-header{
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+
 }
 .logo {
     height: 100%;
@@ -76,3 +84,40 @@ li {
     border: 0;
     border-radius: 5px;
 }
+.promo {
+    display: flex;
+    width: 30%;
+    margin: 100px auto;
+    align-items: center
+    
+}
+
+.resource {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.publish h3 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+  }
+  
+.publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+  
+.publish > form {
+    display: flex;
+}
+  
+  .publish > form p {
+    color: #025157;
+    margin-right: 18px;
+  }
