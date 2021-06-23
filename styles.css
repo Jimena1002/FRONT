@@ -1,30 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-color: #fff;
+    background-color: #fffbf7;
+}
+.fixed-header{
+    position: fixed;
+    background-color: #fffbf7;
+    top:0;
+    left: 0;
+    right: 0;
+}
+main {
+    margin-top: 185px;
+    text-align: center;
+    margin-bottom: 350px;
 }
 h1 {
+    color: #025157;
+    font-family: "Alegreya", serif;
+    font-size: 60px;
+    margin-bottom: 24px;
+}
+h4 {
     color: #46484c;
-    text-align: center;
+    font-family: "Slabo 27px"serif;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 p {
-    color: black;
-    font-family: Verdana;
-    font-size: 20px;
+    color: #8b8b8bcc;
+    margin-top: 15px;
+}
+form {
+    height: 55px;
+    margin-bottom: 40px;
 }
 button {
+    height: 100%;
+    border-radius: 8px;
     color: #fff;
     background-color: #025157;
-    padding: 12px 14px;
-    border-width: 0px;
+    padding: 6px 20px;
+    border:0;
+    margin-left: -10px;
+}
+.principal > input {
+    height: 70%;
+    border: 1px solid #b6b6b6;
+    padding: 2px 20px;
+    width: 60%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+.principal > button {
+    height: 70%;
+    background-color: #025157;
+    color: #fff;
+    border: none;
+}
+.principal > img {
+    width: 600px;
+    margin-top: 30px;
+    margin-bottom: 70px;
 }
 .header {
     margin: 40px 20px 0 20px;
     font-size: 0;
-    height: 45px;
     font-family: sans-serif;
-    width: 100%;
-}
-li {
-    display: inline;
 }
  /* todos los "hijos" del header */
 .header > * {
@@ -34,15 +79,13 @@ li {
     height: 100%;
     line-height: 45px;
 }
-.fixed-header{
-    position: fixed;
-    background-color: #fff;
-    top: 0;
-    left: 0;
-
+li {
+    display: inline;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .logo {
-    height: 100%;
+    width: 15%;
 }
 .logo > img {
     height: 100%;
@@ -52,23 +95,18 @@ li {
     text-align: center;
     color: #025157;
     font-family: sans-serif;
-    font-weight: 500;
 }
 .navbar > *{
     display: inline;
     margin-right: 25px;
-    margin-left: 15px;
-
+    margin-left: 25px;
 }
 .actions {
     width: 15%;
-    text-align: left;
+    text-align: right;
     font-size: 14px;
-    line-height: 15px;
-    color: #67b54b;
     font-weight: 600;
 }
-
 .actions > * {
     margin-left: 10px;
     margin-right: 10px;
@@ -76,7 +114,6 @@ li {
 .actions a {
     color: #67b54b;
 }
-
 .actions button {
     color: #fff;
     background-color: #67b54b;
@@ -84,40 +121,61 @@ li {
     border: 0;
     border-radius: 5px;
 }
-.promo {
-    display: flex;
-    width: 30%;
-    margin: 100px auto;
-    align-items: center
-    
+.publish{
+    flex: 1;
 }
-
-.resource {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-right: 30px;
-}
-
 .publish h3 {
     font-family: "Alegreya", serif;
     font-size: 40px;
     line-height: 48px;
     color: #025157;
-  }
-  
+}
 .publish > p {
     font-size: 16px;
     color: #343434;
     line-height: 1.5;
     margin-bottom: 20px;
 }
-  
 .publish > form {
     display: flex;
-}
-  
-  .publish > form p {
+    height: 55px;
+    margin-bottom: 40px;
+} 
+.publish > div p {
     color: #025157;
     margin-right: 18px;
-  }
+}
+form.signup-form{
+    font-size: 14px;
+}
+form.singup-form input{
+    height: 70%;
+    border: 1px solid #b6b6b6;
+    padding: 6px 20px;
+    width: 70%;
+    max-width: 250px;
+    border-radius: 5px;
+}
+form.singup-form button{
+    background-color: #025157;
+    color: #fff;
+    border: 0;
+    padding: 6px 20px;
+    margin-left: 10px;
+}
+.promo {
+    display: flex;
+    max-width: 70%;
+    margin: 100px auto;
+    align-items: center
+}
+.resource {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.resource img{
+    width: 120px;
+    margin-top: 10px;
+}
