@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: lightblue;
 }
@@ -10,7 +15,7 @@ h1 {
 p {
     color: #8b8b8bcc;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    margin-top: 15px;
 }
 button {
     color: #fff;
@@ -188,31 +193,20 @@ form.signup-form button{
 /* inicio de ejecicio prework */
 .prework1 {
     background-color: #67b54b;
-    display: flex;
     padding: 5% 15%;
+    display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
 .information {
     flex: 2;
-    display: flex;
-    flex-direction: column;
     padding-right: 100px;
-    box-sizing: border-box;
-}
-.information figure{
-    margin-top: 32px;
-}
-.information img {
-    width: 500px;
-    max-width: 100%;
 }
 .information h3 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 35px;
-    line-height: 1.5;
+    font-size: 51px;
+    line-height: 61px;
     color: #025157;
 }
 .information p {
@@ -222,42 +216,47 @@ form.signup-form button{
     color: #343434;
     margin-bottom: 1rem;
 }
-.information button {
-        font-size: 14px;
-    padding: 12px 12px 6px 12px;
-    border-radius: 8px;
-    height: 45px;
+.information button{
+    font-size: 14px;
+    padding: 12px 12px 16px 12px;
+    border-radius: 8px; 
+    font-size: 14px;
     font-weight: 600;
-    margin-left: 0;  
+    height: 45px;
+
+}
+.information figure{
+    margin-top: 32px;
+}
+.information img {
+    width: 500px;
+    max-width: 100%;
 }
 .profile {
     flex: 1;
+    position: relative;
     background-color: #b6b6b6;
-    border-radius: 10px;
-    padding: 30px;
-    position: unset;
-    max-width: 400px;
-    width: 130%;
 }
-.profile .card img {
+.profile .card figure {
+    margin-top: 0;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+.profile .card figure > img {
     width: 100%;
-    max-width: 30vw;
+    max-width: 16vw;
+    border: 1px solid #46484c;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.profile .card  {
-     position: relative;
-}
-.profile .card figure{
-    margin-top: 0;
-}
-.profile .card .logo {
-    position: absolute;
+.profile .card .logo{
+    position: relative;
     bottom: -20px;
     right: 20px;
     width: 100px;
     height: 100px;
-    background-color: orange;
+    background-color: #f9da73;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -265,5 +264,42 @@ form.signup-form button{
 }
 .profile .card .logo img {
     max-width: 75%;
-    height: 100%;
+}
+.profile .card-body {
+    padding: 25px;
+}
+.profile .card-body h4{
+    color: #025157;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+.profile .card-body h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.profile .card-body .results {
+    display: flex;
+    align-items: center;
+    color: #46484c;
+}
+.profile .card-body .results img {
+    width: 26px;
+    margin-right: 20px;
+}
+.profile .card-body p {
+    margin-top: 0;
+}
+.profile button{
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
 }
