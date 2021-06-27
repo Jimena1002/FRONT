@@ -341,47 +341,75 @@ form.signup-form button{
     /* grid-template-columns: 500px 1fr; */
     /* grid-template-columns: repeat(2, 330px);
     grid-template-rows: repeat(2, 1fr); */
-    grid-template-rows:   1fr 1fr;
-    grid-template-columns: 330px 330px;
+    /* grid-template-rows:   1fr 1fr;
+    grid-template-columns: 330px 330px; */
+    grid-template: repeat(2,330px) / repeat(2, 1fr);
     background-color: #025157;
     padding: 5% 10%;
-    gap: 10px;
-    align-items: center;
 }
-.feature-art {
-    background-color: lightseagreen;
+.feature-card {
     margin: 0 15px 30px 15px;
     background-color: aliceblue;
-    border-radius: 8px;
+    border-radius: 5px;
+    border: 1px solid #46484c;
     align-items: center;
-    /* overflow: hidden; */
-    width: 90%;
-    height: 298px;
+    overflow: hidden;
     display: flex;
 }
-.feature-art .feature-content .icon  {
-    position: absolute;
-    bottom: -20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    background-color: magenta;
+.feature-card .feature-content{
+    align-self: right;
+    padding: 30px 20px 40px 40px;
+    flex: 2
+}
+.feature-card .feature-content figure{
+    margin-top: 20px;
+    margin-bottom: 6px;
+    border: none;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(221, 221, 221, 0);
+    width: fit-content;
 }
-.feature-art .feature-content .icon img {
-    max-width: 75%;
-    height: auto;
+.feature-card .feature-content figure > img {
+    align-content: center;
+    width: 60px;
 }
-.feature-art .feature-content {
+.feature-card .feature-content h3{
+    color: #46484c;
+    font-family:'Lucida Sans Regular', Verdana;
+    text-align: left;
+    line-height: 1;
+    padding-top: 8px;
+    font-size: 16pt;
+}
+.feature-card .feature-content p{
+    color: #b6b6b6;
+    font-family: 'Lucida Sans Regular', Verdana;
+    text-align: left;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    line-height: 1.25;
+    font-size: 14pt;
+}
+.feature-card .feature-content a{
+    font-family: Arial;
+    font-size: 12pt;
+    line-height: 1;
+    text-align: left;
+    color: #67b54b;
+    padding-top: 15px;
+}
+.feature-card .feature-image {
     flex: 1;
+    width: 40%;
+    position: relative;
+    right: -50px;
+    height: 80%;
 }
-
-.feature-art .feature-content h3 {
-    font-family: 'Times New Roman', serif;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: justify;
+.feature-card .feature-image figure{
+    margin-top: 0;
+    height: 100%;
+}
+.feature-card .feature-image figure>img{
+    margin-top: 0;
+    height: 100%;
 }
