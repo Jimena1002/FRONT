@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 body {
+<<<<<<< HEAD
     background-color: lightblue;
+=======
+    background-color: ##46484c;
+>>>>>>> 84cd8d5454e6b282cdaf1f7c0f7e64237c93a18a
 }
 h1 {
     color: #46484c;
